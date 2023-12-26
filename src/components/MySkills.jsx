@@ -16,6 +16,9 @@ import {
 
 import { Skills } from '../utils/Data';
 
+import { fadeInLeftVariant,fadeInRightVariant } from '../utils/Variants';
+import { motion } from 'framer-motion';
+
 const MySkills = () => {
   return (
     <div>
@@ -23,9 +26,16 @@ const MySkills = () => {
         id="Skills"
         top="10%"
         bottom="10%"
+        responsiveLeft="1rem"
+        responsiveRight="1rem"
       >
-          <FlexContainer fullWidthChild>
-            <SkillsCardContainer>
+          <FlexContainer responsiveFlex responsiveDirection="column-reverse" fullWidthChild>
+            <SkillsCardContainer
+              as={motion.div}
+              variants={fadeInLeftVariant}
+              initial="hidden"
+              whileInView="visible"
+            >
               {Skills.map((skill,index) => (
                 <SkillsCard key={index}>
                   <IconContainer style={{fontSize:"5rem"}} color="blue" >
@@ -39,7 +49,11 @@ const MySkills = () => {
               ))}
             </SkillsCardContainer>
 
-            <div>
+            <motion.div
+              variants={fadeInRightVariant}
+              initial="hidden"
+              whileInView="visible"
+            >
                 <Heading as="h4" size="h4">
                   MY SKILLS
                 </Heading>
@@ -52,7 +66,7 @@ const MySkills = () => {
                 <ParaText>
                   I have experience in using React for building scalable and maintainable applications. This has allowed me to create efficient and sustainable code that can adept to the changing needs of a business.
                 </ParaText>
-            </div>
+            </motion.div>
 
           </FlexContainer>
       </PaddingContainer>

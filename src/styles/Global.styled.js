@@ -16,6 +16,14 @@ export const PaddingContainer = styled.div`
   padding-bottom: ${({bottom}) => bottom};
   padding-left: ${({left}) => left};
   padding-right: ${({right}) => right};
+
+  @media(max-width: ${({theme}) => theme.breakpoints.mobile}){
+    padding-top: ${({responsiveTop}) => responsiveTop};
+    padding-bottom: ${({responsiveBottom}) => responsiveBottom};
+    padding-left: ${({responsiveLeft}) => responsiveLeft};
+    padding-right: ${({responsiveRight}) => responsiveRight};
+  }
+
 `
 
 export const FlexContainer = styled.div`
@@ -28,6 +36,13 @@ export const FlexContainer = styled.div`
   & > div {
     flex: ${({fullWidthChild}) => fullWidthChild && 1};
   }
+
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
+    display: ${({responsiveFlex}) => responsiveFlex ? "flex" : "block"};
+
+    flex-direction: ${({responsiveDirection}) => responsiveDirection};
+  }
+
 `
 
 export const Heading = styled(PaddingContainer)`
@@ -47,6 +62,23 @@ export const Heading = styled(PaddingContainer)`
           return;
         }
   }}
+
+  @media(max-width: ${({theme}) => theme.breakpoints.mobile}){
+    font-size: ${({size}) => {
+      switch(size){
+          case 'h1':
+            return '2.5rem';
+          case 'h2':
+            return '2rem';
+          case 'h3':
+            return '1.5rem';
+          case 'h4':
+            return '1rem';
+          default:
+            return;
+          }
+    }}
+  }
 `
 
 export const BlueText = styled.span`
@@ -59,7 +91,7 @@ export const ParaText = styled(PaddingContainer)`
 `
 
 export const IconContainer = styled.div`
-  fonst-size: ${({size}) => size};
+  font-size: ${({size}) => size};
   cursor:pointer;
   color: ${({color,theme}) => {
     switch(color){
@@ -89,5 +121,22 @@ export const Button = styled.a`
   &:hover{
     color:${({theme}) => theme.colors.primary_light};
     background-color: ${({theme}) => theme.colors.white}
+  }
+`
+
+  export const Button2 = styled.a`
+  display: inline-block;
+  width: max-content;
+  padding: 1rem 2rem;
+  color: ${({theme}) => theme.colors.primary_light};
+  background-color: ${({theme}) => theme.colors.white};
+  border: 1px solid ${({theme}) => theme.colors.white};
+  border-radius: 5px;
+  cursor:pointer;
+  transition: all 0.3s ease;
+
+  &:hover{
+    color:${({theme}) => theme.colors.white};
+    background-color: ${({theme}) => theme.colors.primary}
   }
 `

@@ -36,45 +36,50 @@ export const Skills = [
       id:0,
       project_name: "Restaurant App",
       project_desc: "This project is a single-page web application developed using React. The application includes various features such as data retrieval via API, a location-based store list, infinite-scroll functionality, search, filtering, adding to favorites, product details, storing favorite data in localStorage, skeleton screens, and responsive design. Data Retrieval via API: The application fetches data through a POST method from a specific API. These data provide store information to the user. ",
-      tech_stack: ["React JS","Tailwind","Rest API"],
+      tech_stack: ["React","Tailwind","Rest API"],
       project_img: RestaurantApp,
       project_url: "https://batuhansevinc-kerzz.netlify.app/",
+      project_source: "https://github.com/BatuSevinc/kerzz",
       reverse: false
     },
     {
       id:1,
       project_name: "Photo Portfolio",
       project_desc: "I created a Photo Portfolio website using React and Tailwind CSS, aiming to enhance user engagement by adding animations to page transitions. The overall theme of the site is simple and easy on the eyes. Additionally, I utilized the createContext structure to incorporate a Mouse move effect, making it available across all pages. I implemented page transitions using React Router Dom and ensured that the design is responsive, allowing users to comfortably navigate the site on different devices. ",
-      tech_stack: ["React JS","Tailwind","Context","Framer Motion"],
+      tech_stack: ["React","Tailwind","Context"],
       project_img: PhotoPortfolio,
       project_url: "https://batusevinc-photoportfolio.netlify.app/",
-      reverse: false
+      project_source: "https://github.com/BatuSevinc/Photo-portfolio",
+      reverse: true
     },
     {
       id:2,
       project_name: "Photo Land",
       project_desc: 'Users can filter the products they want based on categories or perform searches using the search button. Additionally, the latest added products are displayed on the homepage as a Carousel with a "new" label. Users can add desired products to their shopping cart, modify the quantity of items in the cart, or remove products from the cart. The unit price and total amount to be paid in the cart are also visible. The website provides the option to empty the cart or proceed to checkout by clicking the purchase button. Users can also navigate to the product page to explore its features in more detail and view similar products. ',
-      tech_stack: ["React JS","Tailwind","Context","Strapi"],
+      tech_stack: ["React","Tailwind","Context","Strapi"],
       project_img: PhotoLand,
       project_url: "https://batusevinc-photoportfolio.netlify.app/",
+      project_source: "https://github.com/BatuSevinc/PhotoLand",
       reverse: false
     },
     {
       id:3,
       project_name: "Restaurant",
       project_desc: "I developed a restaurant page using React and Tailwind CSS, which welcomes users with an impressive interface. By incorporating animations, my aim was to captivate users' attention and make their experiences even more enjoyable. To facilitate users in easily selecting dates and adjusting time and time zones, I added React Datepicker and React Time Picker components. This enables users to efficiently manage appointments and time-based events.",
-      tech_stack: ["React JS","Tailwind","Framer Motion",],
+      tech_stack: ["React","Tailwind","Framer Motion",],
       project_img: Restaurant,
       project_url: "https://batusevinc-restaurant.netlify.app/",
-      reverse: false
+      project_source: "https://github.com/BatuSevinc/Restaurant",
+      reverse: true
     },
     {
       id:4,
       project_name: "WEATHER APP",
       project_desc: "My project retrieves daily and weekly weather reports for all 81 provinces of Turkey using a Rest API. Users can select a province on a map and view detailed weather information on a new page. I developed the project using Next.js and added several features to enhance the user experience. Firstly, I integrated a mechanism to prevent user errors and redirect them to an error page when invalid searches are detected. Additionally, to minimize the waiting time for users, I activated a loading screen. This ensures that users can quickly and seamlessly obtain weather information. To make the project more user-friendly, I dynamically changed the background colors of cards based on the weather conditions. This visual representation allows users to perceive weather conditions more easily.",
-      tech_stack: ["React", "Next.js","Rest API","Tailwind CSS"],
+      tech_stack: ["React", "Next.js","Rest API","Tailwind"],
       project_img: Weather,
       project_url: "https://batusevinc-weather.netlify.app/",
+      project_source: "https://github.com/BatuSevinc/weather-nextjs",
       reverse: false
     },
     {
@@ -84,7 +89,31 @@ export const Skills = [
       tech_stack: ["React JS","CSS"],
       project_img: Seamark,
       project_url: "https://batusevinc-seamark.netlify.app/",
-      reverse: false
+      project_source: "https://github.com/BatuSevinc/seaMark-App",
+      reverse: true
     },
 
+  ]
+
+  export const navLinks = [
+    {
+      id:0,
+      name:"Home",
+      href:"Home"
+    },
+    {
+      id:1,
+      name:"My Skills",
+      href:"Skills"
+    },
+    {
+      id:3,
+      name:"My Projects",
+      href:"Projects"
+    },
+    {
+      id:4,
+      name:"My Contact",
+      href:"Contact"
+    },
   ]
