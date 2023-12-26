@@ -4,8 +4,6 @@ import {
   FlexContainer,
   PaddingContainer,
   Heading,
-  IconContainer,
-  ParaText,
   BlueText,
   Button
 } from '../styles/Global.styled'
