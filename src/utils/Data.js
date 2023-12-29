@@ -90,8 +90,8 @@ export const Skills = [
       project_desc: "In this project, I created a travel website using Next.js, TypeScript, and Tailwind CSS. Throughout the development process, I aimed to provide a user-friendly and mobile-responsive experience. By leveraging Next.js and TypeScript, I developed a robust React application with a page-based architecture, enhancing both performance and development speed. Tailwind CSS formed the foundation for the project's style and design, offering ease and flexibility in designing a responsive user interface. I took advantage of Tailwind's convenience and adaptability to craft an interface adhering to responsive design principles, ensuring smooth navigation across various devices such as mobile, tablet, and desktop screens.",
       tech_stack: ["TypeScript", "Next.js","React","Tailwind"],
       project_img: Travel,
-      project_url: "https://batusevinc-weather.netlify.app/",
-      project_source: "https://github.com/BatuSevinc/weather-nextjs",
+      project_url: "https://batusevinc-travel.netlify.app/",
+      project_source: "https://github.com/BatuSevinc/travel-app",
       reverse: true
     },
     {
