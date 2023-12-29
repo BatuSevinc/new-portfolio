@@ -9,6 +9,7 @@ import PhotoLand from '../assets/photoland.png'
 import PhotoPortfolio from '../assets/photoPortfolio.png'
 import Seamark from '../assets/seamark.png'
 import Weather from '../assets/weather.png'
+import Travel from '../assets/travel.png'
 export const Skills = [
     {
       id:0,
@@ -85,23 +86,33 @@ export const Skills = [
     },
     {
       id:5,
-      project_name: "WEATHER APP",
-      project_desc: "My project retrieves daily and weekly weather reports for all 81 provinces of Turkey using a Rest API. Users can select a province on a map and view detailed weather information on a new page. I developed the project using Next.js and added several features to enhance the user experience. Firstly, I integrated a mechanism to prevent user errors and redirect them to an error page when invalid searches are detected. Additionally, to minimize the waiting time for users, I activated a loading screen. This ensures that users can quickly and seamlessly obtain weather information. To make the project more user-friendly, I dynamically changed the background colors of cards based on the weather conditions. This visual representation allows users to perceive weather conditions more easily.",
-      tech_stack: ["React", "Next.js","Rest API","Tailwind"],
-      project_img: Weather,
+      project_name: "TRAVEL APP",
+      project_desc: "In this project, I created a travel website using Next.js, TypeScript, and Tailwind CSS. Throughout the development process, I aimed to provide a user-friendly and mobile-responsive experience. By leveraging Next.js and TypeScript, I developed a robust React application with a page-based architecture, enhancing both performance and development speed. Tailwind CSS formed the foundation for the project's style and design, offering ease and flexibility in designing a responsive user interface. I took advantage of Tailwind's convenience and adaptability to craft an interface adhering to responsive design principles, ensuring smooth navigation across various devices such as mobile, tablet, and desktop screens.",
+      tech_stack: ["TypeScript", "Next.js","React","Tailwind"],
+      project_img: Travel,
       project_url: "https://batusevinc-weather.netlify.app/",
       project_source: "https://github.com/BatuSevinc/weather-nextjs",
       reverse: true
     },
     {
       id:6,
+      project_name: "WEATHER APP",
+      project_desc: "My project retrieves daily and weekly weather reports for all 81 provinces of Turkey using a Rest API. Users can select a province on a map and view detailed weather information on a new page. I developed the project using Next.js and added several features to enhance the user experience. Firstly, I integrated a mechanism to prevent user errors and redirect them to an error page when invalid searches are detected. Additionally, to minimize the waiting time for users, I activated a loading screen. This ensures that users can quickly and seamlessly obtain weather information. To make the project more user-friendly, I dynamically changed the background colors of cards based on the weather conditions. This visual representation allows users to perceive weather conditions more easily.",
+      tech_stack: ["React", "Next.js","Rest API","Tailwind"],
+      project_img: Weather,
+      project_url: "https://batusevinc-weather.netlify.app/",
+      project_source: "https://github.com/BatuSevinc/weather-nextjs",
+      reverse: false
+    },
+    {
+      id:7,
       project_name: "SEAMARK",
       project_desc: "This project was developed with the aim of creating a clone of the Seamark Consultancy website's homepage. We activated the homepage and added some features to enhance the user experience. In the solution section, we used a background-image to display the background image on hover, creating a pleasant visual interaction when the user hovers over certain areas. Furthermore, we utilized components to make the card structures more readable. Each card was created as a separate component, resulting in a more modular code structure. This approach makes the project more sustainable and extensible. We also paid attention to responsive compatibility. The design was developed to adapt to different screen sizes, ensuring proper display across various devices, from mobile devices to large desktop computers.",
       tech_stack: ["React JS","CSS"],
       project_img: Seamark,
       project_url: "https://batusevinc-seamark.netlify.app/",
       project_source: "https://github.com/BatuSevinc/seaMark-App",
-      reverse: false
+      reverse: true
     },
 
   ]
