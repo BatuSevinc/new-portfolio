@@ -12,6 +12,8 @@ import {
 } from "../styles/Global.styled";
 
 import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 import {
   ShowcaseImageCard,
   ShowcaseParticleContainer,
@@ -67,6 +69,12 @@ const Showcase = () => {
             </IconContainer>
             </Link>
           </FlexContainer>
+          <ParaText style={{display:"flex", alignItems:"center",gap:"8px"}}>
+            <FaPhoneAlt size="1rem"/> +90 534 551 80 80
+          </ParaText>
+          <ParaText style={{display:"flex", alignItems:"center",gap:"8px"}}>
+            <MdEmail size="1rem"/> batusvnc@outlook.com
+          </ParaText>
         </motion.div>
 
         <FlexContainer
